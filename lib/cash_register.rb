@@ -32,6 +32,3 @@ class CashRegister
   end
   
 end
-
-client = CashRegister.new
-client.add_item("eggs",0.90)
