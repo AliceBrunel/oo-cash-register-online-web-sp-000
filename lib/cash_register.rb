@@ -13,7 +13,7 @@ class CashRegister
     @total
   end
   
-  def add_item(title, price, quantity = 0)
+  def add_item(title, price, quantity = 1)
     @@items << title
     new_total = @total + (price*quantity)
     
@@ -32,3 +32,6 @@ class CashRegister
   end
   
 end
+
+client = CashRegister.new
+client.add_item("eggs",0.90)
