@@ -25,8 +25,8 @@ class CashRegister
       puts "There is no discount to apply."
     else
       puts "After the discount, the total comes to $#{@total}."
-      @total
     end
+    
   end
 
   def items
