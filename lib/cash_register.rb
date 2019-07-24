@@ -15,6 +15,7 @@ class CashRegister
   end
   
   def add_item(title, price, quantity = 1)
+    all_items = Array.new(quantity) {title}
     @items.push(title*quantity)
     @last_transaction = @total
     @total += (price * quantity)    
